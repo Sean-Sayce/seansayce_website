@@ -8,18 +8,21 @@ export function Navbar({ name }: { name: string }) {
   ];
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 border-b border-zinc-800 bg-zinc-950/70 backdrop-blur">
+    <header className="fixed inset-x-0 top-0 z-50 border-b border-[color:var(--border)] bg-[color:var(--bg)]/75 backdrop-blur">
       <div className="mx-auto flex max-w-5xl items-center justify-between px-4 py-3">
-        <a href="#home" className="text-sm font-semibold text-zinc-100">
-          {name}
+        <a
+          href="#home"
+          className="text-sm font-semibold text-[color:var(--text-primary)]"
+        >
+          Sean <span className="text-[color:var(--accent)]">Sayce</span>
         </a>
 
         <nav className="hidden gap-6 sm:flex">
           {links.map((l) => (
             <a
               key={l.href}
-              className="text-sm text-zinc-300 hover:text-white"
               href={l.href}
+              className="text-sm text-[color:var(--text-muted)] hover:text-[color:var(--accent)] transition"
             >
               {l.label}
             </a>
@@ -27,8 +30,10 @@ export function Navbar({ name }: { name: string }) {
         </nav>
 
         <a
-          className="rounded-xl border border-zinc-700 px-3 py-1.5 text-sm font-medium text-zinc-100 hover:bg-zinc-900"
-          href="/resume.pdf"
+          href="/Sean_Sayce_Resume.pdf"
+          target="_blank"
+          rel="noreferrer"
+          className="rounded-xl border border-[color:var(--accent)] bg-[color:var(--accent)]/10 px-3 py-1.5 text-sm font-medium text-[color:var(--text-primary)] transition hover:bg-[color:var(--accent)]/20"
         >
           Resume
         </a>
