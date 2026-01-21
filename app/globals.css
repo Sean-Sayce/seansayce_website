@@ -4,15 +4,15 @@
   /* === Typical dark mode (NOT black) === */
   --bg: #0f172a;          /* slate-900 background */
   --card: #111827;        /* slate-900/950 cards */
-  --border: #1f2937;      /* slate-800 borders */
+  --border: #193b6b;      /* slate-800 borders */
 
   /* Text */
   --text-primary: #e5e7eb; /* gray-200 */
   --text-muted: #9ca3af;  /* gray-400 */
 
   /* Accent (Aggie maroon, visible on dark) */
-  --accent: #7a1f1f;
-  --accent-hover: #a12a2a;
+  --accent: #329ad6;
+  --accent-hover: #329ad5;
 
   /* Required mappings */
   --background: var(--bg);

@@ -14,7 +14,7 @@ export default function Home() {
 
       <main className="mx-auto max-w-5xl px-4 pt-24 pb-16">
         {/* HERO */}
-          <section id="home" className="mb-24">
+          <section id="home" className="mb-12 scroll-mt-24">
             <div className="flex flex-col items-center gap-8 sm:flex-row sm:items-start">
 
               {/* Headshot */}
@@ -22,8 +22,8 @@ export default function Home() {
                 <Image
                   src="/headshot.jpeg"
                   alt="Portrait of Sean Sayce"
-                  width={200}
-                  height={200}
+                  width={300}
+                  height={300}
                   priority
                   className="rounded-2xl object-cover ring-1 ring-zinc-700"
                 />
@@ -56,14 +56,14 @@ export default function Home() {
                 title: "BuffAggie",
                 description:
                   "AI-assisted fitness recommendation application that integrates a large language model with structured fitness and location data to deliver personalized workout guidance.",
-                tech: [
-                  "Python",
-                  "Streamlit",
-                  "LangChain",
-                  "Groq API",
-                  "Google Maps API",
-                  "SQLite",
-                ],
+                tech: (
+                  <>
+                    <Pill icon="/icons/python.svg">Python</Pill>
+                    <Pill icon="/icons/streamlit.svg">Streamlit</Pill>
+                    <Pill icon="/icons/langchain.svg">LangChain</Pill>
+                    <Pill icon="/icons/sqlite.svg">SQLite</Pill>
+                  </>
+                ),
                 highlights: [
                   "Implemented LangChain-based intent classification and prompt transformation to convert avoidance-based user inputs into appropriate fitness queries prior to LLM inference",
                   "Integrated LLM-powered natural language responses with external APIs to provide personalized fitness and gym recommendations",
@@ -83,16 +83,14 @@ export default function Home() {
                 title: "BeatSync",
                 description:
                   "Cross-platform mobile application that connects to a Bluetooth Low Energy (BLE) peripheral to support guided workouts, session tracking, and user goal management with local data persistence and optional music integration.",
-                tech: [
-                  "React Native",
-                  "TypeScript",
-                  "React Navigation",
-                  "Bluetooth Low Energy (BLE)",
-                  "SQLite",
-                  "AsyncStorage",
-                  "Redux",
-                  "Spotify Web API",
-                ],
+                tech: (
+                  <>
+                    <Pill icon="/icons/react.svg">React Native</Pill>
+                    <Pill icon="/icons/typescript.svg">TypeScript</Pill>
+                    <Pill icon="/icons/sqlite.svg">SQLite</Pill>
+                    <Pill icon="/icons/redux.svg">Redux</Pill>
+                  </>
+                ),
                 highlights: [
                   "Implemented a complete BLE connection workflow, including permission handling, device scanning, selection, and connection management",
                   "Built a multi-screen mobile experience for workout configuration and playback, along with profile, history, statistics, and goals views",
@@ -112,18 +110,14 @@ export default function Home() {
                 title: "Maroon Health Site",
                 description:
                   "Web platform for managing organizational operations, including member authentication, volunteer event scheduling, medication inventory tracking, and internal content pages such as resources, FAQs, and calendar updates.",
-                tech: [
-                  "Ruby on Rails",
-                  "Ruby",
-                  "PostgreSQL",
-                  "Devise",
-                  "Google OAuth (OmniAuth)",
-                  "RSpec",
-                  "GitHub Actions (CI)",
-                  "Docker",
-                  "Rubocop",
-                  "Brakeman",
-                ],
+                tech: (
+                  <>
+                    <Pill icon="/icons/rubyonrails.svg">Ruby on Rails</Pill>
+                    <Pill icon="/icons/postgresql.svg">PostgreSQL</Pill>
+                    <Pill icon="/icons/googleauthenticator.svg">Google OAuth</Pill>
+                    <Pill icon="/icons/docker.svg">Docker</Pill>
+                  </>
+                ),
                 highlights: [
                   "Implemented secure member authentication with Devise and Google OAuth (OmniAuth), including role-based access patterns (e.g., admin vs volunteer)",
                   "Built event scheduling and volunteer signup flows with persistent shift assignments linked to members and events",
@@ -142,16 +136,14 @@ export default function Home() {
                 title: "Aggie Game Masters",
                 description:
                   "AI-powered board game recommendation and tutoring platform that combines retrieval-augmented generation (RAG) with structured game metadata and rulebook parsing to provide personalized recommendations and in-game assistance.",
-                tech: [
-                  "Python",
-                  "FastAPI",
-                  "LangChain",
-                  "Qdrant",
-                  "SQLite",
-                  "Streamlit",
-                  "Docker",
-                  "REST APIs",
-                ],
+                tech: (
+                  <>
+                    <Pill icon="/icons/python.svg">Python</Pill>
+                    <Pill icon="/icons/langchain.svg">LangChain</Pill>
+                    <Pill icon="/icons/sqlite.svg">SQLite</Pill>
+                    <Pill icon="/icons/streamlit.svg">Streamlit</Pill>
+                  </>
+                ),
                 highlights: [
                   "Implemented a retrieval-augmented generation (RAG) pipeline using vector embeddings and Qdrant to ground LLM responses in board game metadata and rulebook content",
                   "Built multiple FastAPI microservices, including a recommender service and rules engine, to support modular and scalable backend architecture",
@@ -170,16 +162,14 @@ export default function Home() {
                 title: "The Alley POS Web App",
                 description:
                   "Web-based point-of-sale (POS) and management interface for a boba shop, featuring a styled menu and cart workflow, admin tools for inventory and pricing, and a multi-page UI built with modern HTML/CSS and JavaScript.",
-                tech: [
-                  "HTML",
-                  "CSS",
-                  "JavaScript",
-                  "React (Create React App)",
-                  "Python",
-                  "Django",
-                  "Django REST Framework",
-                  "PostgreSQL",
-                ],
+                tech: (
+                  <>
+                    <Pill icon="/icons/javascript.svg">JavaScript</Pill>
+                    <Pill icon="/icons/react.svg">React</Pill>
+                    <Pill icon="/icons/django.svg">Django</Pill>
+                    <Pill icon="/icons/postgresql.svg">PostgreSQL</Pill>
+                  </>
+                ),
                 highlights: [
                   "Built a multi-page frontend with React components for core POS flows, including menu browsing, cart management, and checkout-style interactions",
                   "Implemented admin-facing UI screens for inventory management, adding drinks, and updating prices, with consistent styling using custom CSS",
@@ -198,16 +188,14 @@ export default function Home() {
                 title: "Backwards Pitching Analysis",
                 description:
                   "Data-driven analysis of the baseball strategy known as pitching backwards, examining how pitchers deviate from traditional fastball-first sequencing across pitch counts using Statcast data.",
-                tech: [
-                  "Python",
-                  "Pandas",
-                  "NumPy",
-                  "PyBaseball",
-                  "scikit-learn",
-                  "Matplotlib",
-                  "Seaborn",
-                  "Jupyter Notebook",
-                ],
+                tech: (
+                  <>
+                    <Pill icon="/icons/python.svg">Python</Pill>
+                    <Pill icon="/icons/pandas.svg">Pandas</Pill>
+                    <Pill icon="/icons/scikitlearn.svg">scikit-learn</Pill>
+                    <Pill icon="/icons/numpy.svg">NumPy</Pill>
+                  </>
+                ),
                 highlights: [
                   "Analyzed MLB Statcast pitch-level data to quantify fastball usage patterns across all standard ball–strike counts",
                   "Engineered features to classify pitch types and filter invalid count states for accurate sequencing analysis",
@@ -265,33 +253,44 @@ export default function Home() {
         {/* SKILLS */}
         <Section id="skills" title="Skills">
           <div className="flex flex-wrap gap-2">
-            <Pill>Python</Pill>
-            <Pill>TypeScript</Pill>
-            <Pill>JavaScript</Pill>
-            <Pill>Java</Pill>
-            <Pill>Ruby</Pill>
-            <Pill>SQL</Pill>
-            <Pill>React</Pill>
-            <Pill>Next.js</Pill>
-            <Pill>React Native</Pill>
-            <Pill>FastAPI</Pill>
-            <Pill>Django</Pill>
-            <Pill>Ruby on Rails</Pill>
-            <Pill>LangChain</Pill>
-            <Pill>PostgreSQL</Pill>
-            <Pill>SQLite</Pill>
-            <Pill>Qdrant</Pill>
-            <Pill>Docker</Pill>
-            <Pill>GitHub Actions</Pill>
-            <Pill>REST APIs</Pill>
-            <Pill>OAuth</Pill>
-            <Pill>Pandas</Pill>
-            <Pill>NumPy</Pill>
-            <Pill>scikit-learn</Pill>
-            <Pill>Matplotlib</Pill>
-            <Pill>Git</Pill>
+            {/* Languages */}
+            <Pill icon="/icons/python.svg">Python</Pill>
+            <Pill icon="/icons/typescript.svg">TypeScript</Pill>
+            <Pill icon="/icons/javascript.svg">JavaScript</Pill>
+            <Pill icon="/icons/ruby.svg">Ruby</Pill>
+
+            {/* Frontend */}
+            <Pill icon="/icons/react.svg">React</Pill>
+            <Pill icon="/icons/nextdotjs.svg">Next.js</Pill>
+
+            {/* Backend / Frameworks */}
+            <Pill icon="/icons/fastapi.svg">FastAPI</Pill>
+            <Pill icon="/icons/django.svg">Django</Pill>
+            <Pill icon="/icons/rubyonrails.svg">Ruby on Rails</Pill>
+            <Pill icon="/icons/langchain.svg">LangChain</Pill>
+
+            {/* Databases */}
+            <Pill icon="/icons/postgresql.svg">PostgreSQL</Pill>
+            <Pill icon="/icons/sqlite.svg">SQLite</Pill>
+
+            {/* Data / ML */}
+            <Pill icon="/icons/pandas.svg">Pandas</Pill>
+            <Pill icon="/icons/numpy.svg">NumPy</Pill>
+            <Pill icon="/icons/scikitlearn.svg">scikit-learn</Pill>
+            <Pill icon="/icons/jupyter.svg">Jupyter</Pill>
+
+            {/* APIs / Platforms */}
+            <Pill icon="/icons/googlemaps.svg">Google Maps API</Pill>
+
+            {/* DevOps / Tooling */}
+            <Pill icon="/icons/docker.svg">Docker</Pill>
+            <Pill icon="/icons/github.svg">GitHub</Pill>
+            <Pill icon="/icons/githubactions.svg">GitHub Actions</Pill>
+            <Pill icon="/icons/vercel.svg">Vercel</Pill>
           </div>
         </Section>
+
+
 
 
         {/* CONTACT */}

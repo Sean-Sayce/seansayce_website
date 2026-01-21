@@ -3,7 +3,6 @@ export function Navbar({ name }: { name: string }) {
     { label: "Projects", href: "#projects" },
     { label: "Experience", href: "#experience" },
     { label: "Skills", href: "#skills" },
-    { label: "About", href: "#about" },
     { label: "Contact", href: "#contact" },
   ];
 
