@@ -35,7 +35,7 @@ export function ExperienceItem({ item }: { item: Experience }) {
               <img
                 src={item.image}
                 alt={item.org}
-                className="w-99 h-66 rounded-2xl object-cover object-top border border-zinc-800"
+                className="w-99 h-66 rounded-2xl object-cover object-left-top border border-zinc-800"
               />
             </div>
           </div>
