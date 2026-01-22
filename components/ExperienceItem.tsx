@@ -24,17 +24,21 @@ export function ExperienceItem({ item }: { item: Experience }) {
 
         {/* Right */}
         {item.image ? (
-          <div className="hidden sm:flex shrink-0 flex-col items-end">
-            <p className="text-xs text-zinc-500 whitespace-nowrap">{item.dates}</p>
+          <div className="shrink-0 flex flex-col items-center sm:items-end">
+            {/* Date: centered on mobile, top-right on desktop */}
+            <p className="text-xs text-zinc-500 whitespace-nowrap sm:self-end">
+              {item.dates}
+            </p>
 
+            {/* Image: centered on mobile, right edge on desktop */}
             <img
               src={item.image}
               alt={item.org}
-              className="mt-3 w-90 aspect-[3/2] rounded-2xl object-cover border border-zinc-800"
+              className="mt-3 w-72 aspect-[3/2] rounded-2xl object-cover border border-zinc-800"
             />
           </div>
         ) : (
-          <p className="hidden sm:block text-xs text-zinc-500 whitespace-nowrap justify-self-end">
+          <p className="text-xs text-zinc-500 whitespace-nowrap sm:justify-self-end sm:self-start">
             {item.dates}
           </p>
         )}
