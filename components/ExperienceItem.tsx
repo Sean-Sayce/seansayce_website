@@ -24,7 +24,7 @@ export function ExperienceItem({ item }: { item: Experience }) {
 
         {/* Right: auto width (matches image), date top-right, image middle-right */}
         {item.image && (
-          <div className="relative hidden sm:flex flex-col items-end">
+          <div className="relative flex flex-col items-end">
             {/* Date: top-right */}
             <p className="absolute right-0 top-0 text-xs text-zinc-500 whitespace-nowrap">
               {item.dates}
