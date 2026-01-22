@@ -9,14 +9,13 @@ type Experience = {
 export function ExperienceItem({ item }: { item: Experience }) {
   return (
     <div className="relative rounded-2xl border border-[color:var(--border)] bg-[color:var(--card)] p-5 transition hover:border-[color:var(--accent)]/60">
-      
-      {/* Date: always top-right of card */}
+      {/* Date: always top-right */}
       <p className="absolute right-5 top-5 text-xs text-zinc-500 whitespace-nowrap">
         {item.dates}
       </p>
 
       <div className="grid gap-6 sm:grid-cols-[1fr_auto]">
-        {/* Left content */}
+        {/* Left */}
         <div className="pr-20 sm:pr-0">
           <p className="text-sm font-semibold text-zinc-100">{item.role}</p>
           <p className="text-sm text-zinc-400">{item.org}</p>
@@ -26,9 +25,20 @@ export function ExperienceItem({ item }: { item: Experience }) {
               <li key={b}>{b}</li>
             ))}
           </ul>
+
+          {/* Mobile image: centered */}
+          {item.image && (
+            <div className="mt-4 flex justify-center sm:hidden">
+              <img
+                src={item.image}
+                alt={item.org}
+                className="w-99 h-66 rounded-2xl object-cover object-left-top border border-zinc-800"
+              />
+            </div>
+          )}
         </div>
 
-        {/* Right image (desktop only) */}
+        {/* Desktop image: right column */}
         {item.image && (
           <div className="hidden sm:flex items-center">
             <img
