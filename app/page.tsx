@@ -70,7 +70,7 @@ export default function Home() {
         <Section
           id="projects"
           title="Projects"
-          subtitle="A list of my passion projects and work at university through the last 4 years."
+          subtitle="A list of my passion projects and work at university through the last 6 years."
         >
           <div className="flex flex-col gap-16">
             <ProjectCard
