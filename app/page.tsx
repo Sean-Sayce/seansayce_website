@@ -36,7 +36,7 @@ export default function Home() {
 
               <p className="mt-4 max-w-2xl text-base leading-relaxed text-zinc-400">
                 I’m a software engineer and a <strong>2025 graduate</strong> of Texas A&amp;M University
-                with a <strong>Master’s in Computer Science</strong>.  I’m especially interested in building{" "}
+                with a Master’s in Computer Science.  I’m interested in building{" "}
                 <strong>intelligent, user-facing systems</strong> that combine{" "}
                 <strong>machine learning</strong> with practical software engineering.
               </p>
@@ -53,11 +53,11 @@ export default function Home() {
 
               <p className="mt-4 max-w-2xl text-base leading-relaxed text-zinc-400">
                 Alongside ML-focused work, I’m comfortable building and deploying{" "}
-                <strong>full-stack applications</strong> using modern web frameworks such as{" "}
+               full-stack applications using modern web frameworks such as{" "}
                 <strong>React</strong> and <strong>Ruby on Rails</strong>, with{" "}
-                <strong>RESTful APIs</strong> and relational databases like{" "}
-                <strong>PostgreSQL</strong>. I focus on writing{" "}
-                <strong>clean, maintainable code</strong> supported by version control and
+                RESTful APIs and relational databases like{" "}
+                <strong>PostgreSQL</strong>. I focus on writing clean,
+                <strong> maintainable code</strong> supported by version control and
                 iterative testing, where performance and <strong>usability</strong> matter.
               </p>
             </div>
