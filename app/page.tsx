@@ -141,7 +141,7 @@ export default function Home() {
                   </>
                 ),
                 highlights: [
-                  "Implemented secure member authentication with Devise and Google OAuth (OmniAuth), including role-based access patterns (e.g., admin vs volunteer)",
+                  "Implemented secure member authentication with Devise and Google OAuth (OmniAuth), including role-based access patterns for an admin and volunteer account",
                   "Built event scheduling and volunteer signup flows with persistent shift assignments linked to members and events",
                   "Developed medication inventory management with transaction logging and low-stock visibility to support operational tracking",
                   "Configured automated CI workflows to run RSpec tests and code quality/security checks (Rubocop and Brakeman) on pushes and pull requests",
@@ -195,8 +195,8 @@ export default function Home() {
                 highlights: [
                   "Built a multi-page frontend with React components for core POS flows, including menu browsing, cart management, and checkout-style interactions",
                   "Implemented admin-facing UI screens for inventory management, adding drinks, and updating prices, with consistent styling using custom CSS",
-                  "Integrated the frontend with a Django REST API to read and update persistent store data (e.g., menu items and inventory state)",
-                  "Added supporting user-facing features such as authentication screens and additional utility views (e.g., trends/analytics-style pages)",
+                  "Integrated the frontend with a Django REST API to read and update persistent store data such as menu items and inventory values",
+                  "Added supporting user-facing features such as authentication screens and additional utility views for monitoring item trends",
                 ],
                 links: {
                   code: "https://github.com/csce-315-331-2023c/project-3-csce_331_900_00b-the-alley",
