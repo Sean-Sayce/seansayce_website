@@ -14,33 +14,55 @@ export default function Home() {
 
       <main className="mx-auto max-w-5xl px-4 pt-24 pb-16">
         {/* HERO */}
-          <section id="home" className="mb-12 scroll-mt-24">
-            <div className="flex flex-col items-center gap-8 sm:flex-row sm:items-start">
-
-              {/* Headshot */}
-              <div className="shrink-0">
-                <Image
-                  src="/headshot.jpeg"
-                  alt="Portrait of Sean Sayce"
-                  width={300}
-                  height={300}
-                  priority
-                  className="rounded-2xl object-cover ring-1 ring-zinc-700"
-                />
-              </div>
-
-              {/* Text content */}
-              <div>
-                <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">
-                  Sean Sayce
-                </h1>
-
-                <p className="mt-4 max-w-2xl text-lg text-zinc-400">
-                  Computer Science student with a strong interest in software engineering, focused on building practical, end-to-end systems. Experience includes developing AI-powered applications, data-driven analysis, and full-stack platforms that integrate APIs, databases, and user-facing interfaces, with an emphasis on clean design and maintainable code.
-                </p>
-              </div>
-
+          <section id="home" className="mb-8 scroll-mt-24">
+          <div className="flex flex-col items-center gap-8 sm:flex-row sm:items-center">
+            {/* Headshot */}
+            <div className="shrink-0">
+              <Image
+                src="/headshot.jpeg"
+                alt="Portrait of Sean Sayce"
+                width={270}
+                height={270}
+                priority
+                className="rounded-2xl object-cover ring-1 ring-zinc-700"
+              />
             </div>
+
+            {/* Text content */}
+            <div>
+              <h1 className="text-2xl sm:text-3xl font-semibold tracking-tight">
+                Sean Sayce
+              </h1>
+
+              <p className="mt-4 max-w-2xl text-base leading-relaxed text-zinc-400">
+                I’m a software engineer and a <strong>2025 graduate</strong> of Texas A&amp;M University
+                with a <strong>Master’s in Computer Science</strong>.  I’m especially interested in building{" "}
+                <strong>intelligent, user-facing systems</strong> that combine{" "}
+                <strong>machine learning</strong> with practical software engineering.
+              </p>
+
+              <p className="mt-4 max-w-2xl text-base leading-relaxed text-zinc-400">
+                Through my projects, I’ve worked extensively with <strong>PyTorch </strong>
+                for model development and evaluation, and I’ve built interactive tools
+                using <strong>Streamlit</strong> to explore data, visualize results, and
+                rapidly prototype ML-driven applications. I also have experience using{" "}
+                <strong>LangChain</strong> to design <strong>LLM-powered workflows</strong>{" "}
+                that integrate retrieval, reasoning, and external tools into cohesive
+                systems.
+              </p>
+
+              <p className="mt-4 max-w-2xl text-base leading-relaxed text-zinc-400">
+                Alongside ML-focused work, I’m comfortable building and deploying{" "}
+                <strong>full-stack applications</strong> using modern web frameworks such as{" "}
+                <strong>React</strong> and <strong>Ruby on Rails</strong>, with{" "}
+                <strong>RESTful APIs</strong> and relational databases like{" "}
+                <strong>PostgreSQL</strong>. I focus on writing{" "}
+                <strong>clean, maintainable code</strong> supported by version control and
+                iterative testing, where performance and <strong>usability</strong> matter.
+              </p>
+            </div>
+          </div>
+
           </section>
 
 
@@ -48,7 +70,7 @@ export default function Home() {
         <Section
           id="projects"
           title="Projects"
-          subtitle="These are a list of my passion projects and university projects through the last 4 years."
+          subtitle="A list of my passion projects and work at university through the last 4 years."
         >
           <div className="flex flex-col gap-16">
             <ProjectCard
@@ -216,7 +238,7 @@ export default function Home() {
         <Section
           id="experience"
           title="Experience"
-          subtitle="Industry and applied software development"
+          subtitle="Work done in industry and with local organizations."
         >
           <div className="space-y-6">
             <ExperienceItem
@@ -224,25 +246,29 @@ export default function Home() {
                 role: "Software Engineering Intern",
                 org: "KX",
                 dates: "Summer 2024",
+                image: "/KXDashboards.png",
                 bullets: [
-                  "Developed automated end-to-end tests for web-based dashboards, reducing reliance on manual user acceptance testing and improving release confidence",
-                  "Built and maintained test suites using JavaScript-based testing frameworks to validate data visualization components and interactive workflows",
-                  "Collaborated with engineers and product stakeholders in an Agile environment, participating in sprint planning, code reviews, and weekly standups",
-                  "Contributed to performance-focused demos and internal tooling showcasing high-throughput data ingestion and system capabilities",
+                  "Designed and implemented automated end-to-end tests using JavaScript and Nightwatch for KX Dashboards, reducing reliance on manual user acceptance testing and improving release confidence",
+                  "Built and maintained comprehensive test suites validating interactive dashboard workflows, data visualizations, and user-driven state changes",
+                  "Developed a high-performance demo application for the KDB Insights website, showcasing real-time analytics, data ingestion capabilities, and system performance",
+                  "Collaborated closely with engineers and product stakeholders in an Agile environment, participating in sprint planning, code reviews, and weekly standups",
+                  "Gained hands-on experience working with large-scale, data-intensive systems and validating real-time analytics platforms",
                 ],
               }}
             />
 
             <ExperienceItem
               item={{
-                role: "Software Developer",
+                role: "Software Engineer",
                 org: "Maroon Health",
-                dates: "2023 – 2024",
+                dates: "Fall 2023",
+                image: "/Maroon-Health.jpg",
                 bullets: [
-                  "Developed and maintained a Ruby on Rails web platform supporting internal operations, volunteer coordination, and organizational content management",
-                  "Implemented secure authentication and authorization flows using Devise and Google OAuth to manage member access and administrative roles",
-                  "Built features for event scheduling, volunteer sign-ups, and inventory tracking backed by a PostgreSQL database",
-                  "Collaborated with a student-led engineering team to deploy updates, review code, and ensure application reliability and security",
+                  "Partnered with a campus organization to build and maintain a production Ruby on Rails web platform supporting medication inventory management, volunteer coordination, and internal communications",
+                  "Implemented secure authentication and authorization using Devise and Google OAuth to manage member access and administrative roles",
+                  "Developed event and shift signup workflows with capacity limits and PostgreSQL-backed persistence, alongside inventory tracking features",
+                  "Worked in a semester-long Agile team with a team lead and scrum master, meeting with clients biweekly to gather requirements and demo features",
+                  "Deployed and maintained the application on Heroku, assisting with production monitoring, debugging, and post-deployment fixes",
                 ],
               }}
             />
