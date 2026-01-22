@@ -262,7 +262,7 @@ export default function Home() {
                 role: "Software Engineer",
                 org: "Maroon Health",
                 dates: "Fall 2023",
-                image: "/Maroon-Health.jpg",
+                image: "/MaroonH.png",
                 bullets: [
                   "Partnered with a campus organization to build and maintain a production Ruby on Rails web platform supporting medication inventory management, volunteer coordination, and internal communications",
                   "Implemented secure authentication and authorization using Devise and Google OAuth to manage member access and administrative roles",
